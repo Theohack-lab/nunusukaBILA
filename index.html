@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff9f3">
+  <title>Happy 19th Birthday, Nabila!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <main class="app" id="app">
+    <section class="screen active hero-screen" id="screen-home" aria-label="Halaman pembuka">
+      <div class="manga-strip strip-left">ゴゴゴ<br>♡<br>ゴゴゴ</div>
+      <div class="hero-copy">
+        <p class="kicker">A VERY BIZARRE BIRTHDAY</p>
+        <h1>Happy <span>19th</span><br>Birthday,<br><em>Nabila!</em></h1>
+        <p class="intro">You're not just a year older,<br>you're a whole new chapter of greatness!</p>
+        <button class="main-button" data-go="screen-characters">OPEN <span>♡</span></button>
+        <p class="tiny-note">(klik untuk memulai)</p>
+      </div>
+      <div class="hero-character" aria-hidden="true">
+        <img src="assets/karakter/funny-valentine.jpg" alt="">
+        <div class="hero-label">HAPPY BIRTHDAY<br><b>MAIN CHARACTER ENERGY</b></div>
+      </div>
+      <div class="manga-strip strip-right">♡<br>ドドド<br>19!</div>
+      <div class="page-mark">01 / 08</div>
+    </section>
+
+    <section class="screen character-screen" id="screen-characters" aria-label="Pilih karakter">
+      <header class="screen-heading">
+        <p class="kicker">YOUR BIRTHDAY QUEST</p>
+        <h2>Choose Your <em>Character</em></h2>
+        <p>Pilih karakter favoritmu untuk membuka ucapan spesial!</p>
+      </header>
+      <div class="character-grid">
+        <button class="character-card valentine" data-character="valentine">
+          <img src="assets/karakter/funny-valentine.jpg" alt="Ilustrasi Funny Valentine">
+          <span class="char-name">Funny Valentine</span><span class="char-part">PART 7 · D4C</span>
+          <span class="char-cta">PILIH ♡</span>
+        </button>
+        <button class="character-card kira" data-character="kira">
+          <img src="assets/karakter/yoshikage-kira.jpg" alt="Ilustrasi Yoshikage Kira">
+          <span class="char-name">Yoshikage Kira</span><span class="char-part">PART 4 · KQ</span>
+          <span class="char-cta">PILIH ♡</span>
+        </button>
+        <button class="character-card rohan" data-character="rohan">
+          <img src="assets/karakter/rohan-kishibe.jpg" alt="Ilustrasi Rohan Kishibe">
+          <span class="char-name">Rohan Kishibe</span><span class="char-part">PART 4 · HEAVEN'S DOOR</span>
+          <span class="char-cta">PILIH ♡</span>
+        </button>
+        <button class="character-card diavolo" data-character="diavolo">
+          <img src="assets/karakter/diavolo.jpg" alt="Ilustrasi Diavolo">
+          <span class="char-name">Diavolo</span><span class="char-part">PART 5 · KING CRIMSON</span>
+          <span class="char-cta">PILIH ♡</span>
+        </button>
+      </div>
+      <div class="bottom-note">Setiap pilihan punya ucapan, warna, dan efek sendiri.</div>
+      <button class="back-link" data-go="screen-home">← KEMBALI</button>
+      <div class="page-mark">02 / 08</div>
+    </section>
+
+    <section class="screen greeting-screen" id="screen-greeting" aria-label="Ucapan karakter">
+      <div class="greeting-art">
+        <img id="greetingImage" src="assets/karakter/funny-valentine.jpg" alt="">
+        <div class="impact-word" id="impactWord">ゴゴゴ</div>
+        <div class="spark spark-one">✦</div><div class="spark spark-two">♡</div>
+      </div>
+      <div class="greeting-content">
+        <button class="skip" data-go="screen-memories">SKIP ↗</button>
+        <p class="kicker" id="greetingPart">PART 7 · D4C</p>
+        <h2 id="greetingName">Funny Valentine</h2>
+        <div class="speech-bubble">
+          <p id="greetingLine">Happy birthday, darling.</p>
+          <small id="greetingSubline">May your future be as glorious as your destiny.</small>
+        </div>
+        <div class="audio-box">
+          <span>♫ CHARACTER VOICE</span>
+          <audio id="characterAudio" controls preload="none">
+            <source id="audioSource" src="assets/audio/funny-valentine.mp3" type="audio/mpeg">
+            Browser kamu tidak mendukung audio.
+          </audio>
+          <small>ini suara asli ya :v</small>
+        </div>
+        <div class="greeting-actions">
+          <button class="outline-button" data-go="screen-characters">PILIH LAGI</button>
+          <button class="main-button" data-go="screen-memories">LANJUT ↗</button>
+        </div>
+      </div>
+      <div class="page-mark">03 / 08</div>
+    </section>
+
+    <section class="screen gallery-screen" id="screen-memories" aria-label="Galeri foto kenangan">
+      <div class="gallery-heading">
+        <p class="kicker">THE GOOD TIMES</p><h2>Galeri Foto <em>Kenangan</em></h2>
+        <p>Momen-momen indah yang selalu ada di hati.</p>
+      </div>
+      <div class="photo-grid memories-grid">
+        <figure class="photo-frame"><img src="assets/foto-kenangan/foto-1.jpg" alt="Foto kenangan 1" onerror="this.style.display='none'"><figcaption>MEMORY 01</figcaption></figure>
+        <figure class="photo-frame"><img src="assets/foto-kenangan/foto-2.jpg" alt="Foto kenangan 2" onerror="this.style.display='none'"><figcaption>MEMORY 02</figcaption></figure>
+        <figure class="photo-frame"><img src="assets/foto-kenangan/foto-3.jpg" alt="Foto kenangan 3" onerror="this.style.display='none'"><figcaption>MEMORY 03</figcaption></figure>
+        <figure class="photo-frame"><img src="assets/foto-kenangan/foto-4.jpg" alt="Foto kenangan 4" onerror="this.style.display='none'"><figcaption>MEMORY 04</figcaption></figure>
+      </div>
+      <p class="gallery-tip">foto anu yg pilih<b>assets/foto-kenangan</b>.</p>
+      <div class="nav-row"><button class="outline-button" data-go="screen-characters">← KEMBALI</button><button class="main-button" data-go="screen-aib">BERIKUTNYA ↗</button></div>
+      <div class="page-mark">04 / 08</div>
+    </section>
+
+    <section class="screen gallery-screen aib-screen" id="screen-aib" aria-label="Galeri foto aib">
+      <div class="gallery-heading">
+        <p class="kicker">CLASSIFIED MATERIAL</p><h2>Galeri Foto <em>Aib</em></h2>
+        <p>Karena yang paling berharga, juga yang paling memalukan.</p>
+      </div>
+      <div class="photo-grid aib-grid">
+        <figure class="photo-frame"><img src="assets/foto-aib/foto-1.jpg" alt="Foto aib 1" onerror="this.style.display='none'"><figcaption>TOP SECRET 01</figcaption></figure>
+        <figure class="photo-frame"><img src="assets/foto-aib/foto-2.jpg" alt="Foto aib 2" onerror="this.style.display='none'"><figcaption>TOP SECRET 02</figcaption></figure>
+        <figure class="photo-frame"><img src="assets/foto-aib/foto-3.jpg" alt="Foto aib 3" onerror="this.style.display='none'"><figcaption>TOP SECRET 03</figcaption></figure>
+        <figure class="photo-frame"><img src="assets/foto-aib/foto-4.jpg" alt="Foto aib 4" onerror="this.style.display='none'"><figcaption>TOP SECRET 04</figcaption></figure>
+      </div>
+      <p class="gallery-tip">Ini anu yg request</b>.</p>
+      <div class="nav-row"><button class="outline-button" data-go="screen-memories">← KEMBALI</button><button class="main-button" data-go="screen-ending">AKHIR CERITA ↗</button></div>
+      <div class="page-mark">05 / 08</div>
+    </section>
+
+    <section class="screen ending-screen" id="screen-ending" aria-label="Ucapan penutup">
+      <div class="ending-art">
+        <img src="assets/karakter/funny-valentine.jpg" alt="">
+        <img src="assets/karakter/yoshikage-kira.jpg" alt="">
+        <img src="assets/karakter/rohan-kishibe.jpg" alt="">
+        <img src="assets/karakter/diavolo.jpg" alt="">
+      </div>
+      <div class="ending-copy">
+        <p class="kicker">TO OUR VERY OWN MAIN CHARACTER</p>
+        <h2>Selamat Ulang Tahun,<br><em>Nabila!</em></h2>
+        <p>Semoga semua mimpi, rencana, dan keinginanmu bisa terwujud. Tetap jadi diri sendiri, karena kamu sudah luar biasa!</p>
+        <p class="signature">— From your special people ♡</p>
+        <button class="main-button" id="openLetter">BUKA SURAT DARI AKU ↗</button>
+        <button class="text-button" data-go="screen-home">ULANGI DARI AWAL ↺</button>
+      </div>
+      <div class="page-mark">06 / 08</div>
+    </section>
+  </main>
+  <audio id="bgMusic" src="assets/audio/bgm.mp3" loop preload="auto"></audio>
+  <button id="musicToggle" class="music-toggle" aria-label="Putar atau jeda musik">♫</button>
+  <script src="script.js"></script>
+</body>
+</html>
